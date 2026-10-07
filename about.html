@@ -5,20 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GaMeS - My Website</title>
     <style>
-        body { font-family: sans-serif; margin: 0; background-color: #f8f9fa; text-align: center; }
-        nav { background-color: #1a1a1a; padding: 20px; }
-        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
-        .container { max-width: 800px; margin: 50px auto; padding: 20px; background: white; border-radius: 8px; }
+        body { 
+            font-family: sans-serif; 
+            margin: 0; 
+            background-color: #f8f9fa; 
+        }
+        nav { 
+            background-color: #1a1a1a; 
+            padding: 20px; 
+            text-align: center;
+        }
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+            margin: 0 15px; 
+            font-weight: bold; 
+        }
+        
+        /* The container card box */
+        .info-box {
+            max-width: 600px;
+            margin: 80px auto;
+            padding: 40px 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        /* The text inside the box */
+        .info-box h1 {
+            font-size: 22px;
+            font-weight: bold;
+            color: #1a1a1a;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* The pulsing animation dot at the top center */
+        .top-animation {
+            width: 20px;
+            height: 20px;
+            background-color: #0070f3;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            animation: pulseGlow 2s infinite ease-in-out;
+        }
+
+        @keyframes pulseGlow {
+            0% {
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 rgba(0, 112, 243, 0.7);
+            }
+            70% {
+                transform: scale(1.1);
+                box-shadow: 0 0 0 10px rgba(0, 112, 243, 0);
+            }
+            100% {
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 rgba(0, 112, 243, 0);
+            }
+        }
     </style>
 </head>
 <body>
 
-    <!-- The exact same navigation bar -->
+    <!-- Navigation Bar -->
     <nav>
         <a href="index.html">الصفحة الرئيسية</a>
     </nav>
 
-        <h1> made by yousef s.abd zaid for eductation, learning and the website its in the early stages</h1>
+    <!-- Main Content Box -->
+    <div class="info-box">
+        <!-- This creates the pulsing animation at the top center -->
+        <div class="top-animation"></div>
+        
+        <!-- Your text centered inside the box -->
+        <h1>made by yousef s.abd zaid for eductation, learning and the website its in the early stages</h1>
+    </div>
 
 </body>
 </html>
