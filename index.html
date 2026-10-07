@@ -11,13 +11,13 @@
             margin: 0;
             padding: 0;
             background-color: #f8f9fa;
-            color: #333;
+            color: #04af8a;
         }
         .container {
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
-            background: red;
+            background: rgb(5, 165, 194);
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             text-align: center;
@@ -59,14 +59,24 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
+        }
+        .logo-link {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
         }
         .nav-logo {
             height: 40px;
             width: auto;
             display: block;
+            align-self: center;
+        }
+        .nav-links {
+            margin-left: auto;
         }
         .nav-links a {
-            color: white;
+            color: rgb(243, 0, 0);
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
@@ -80,9 +90,9 @@
 
     <!-- Navigation Bar -->
 <nav>
-    <!-- Logo on the left side -->
+    <!-- Centered navigation logo -->
     <a href="index.html" class="logo-link">
-        <img src="logo.png" alt="Logo" class="nav-logo">
+        <img src="Logo.png" alt="Logo" class="nav-logo">
     </a>
     
     <!-- Navigation Links on the right side -->
